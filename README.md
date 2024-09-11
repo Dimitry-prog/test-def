@@ -1,50 +1,65 @@
-# React + TypeScript + Vite
+## Getting Started
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+```bash
+npm run dev  // dev mod
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+### Features
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+* WebSocket
+* Infinity pagination
+* Weather
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+### Stack
+
+* React
+* Typescript
+* Tailwind
+* WebSocket
+* React-hook-form
+* React-query
+* Zod
+* Axios
+* eslint
+* prettier
+
+### ENV file
+
+<details><summary>env</summary>
+
+VITE_API_BASE_INFINITY_URL=
+VITE_API_BASE_WEATHER_URL=
+VITE_API_BASE_WEATHER_IMG_URL=
+VITE_API_BASE_SOCKET_URL=
+
+</details>
+
+### Preview
+
+<details><summary>Images</summary>
+
+
+</details>
+
+### Test Assignment for React Front-end Developer
+
+<details><summary>Test Info</summary>
+Тестовое задание:
+
+
+
+Задача: Написать TG Mini App.
+
+3 экрана, меню снизу для перехода между экранами
+На одном экране будет работать с websocket (https://websocket.org/tools/websocket-echo-server)
+На другом выводит погоду или курс ЦБ РФ полученный через API
+На третьем экране выводит бесконечную ленту с подгрузкой по кнопке
+
+Код разместить в репозитории. Приложение разместить в Telegram.
+
+На что смотрим:
+Лаконичность кода
+Работа с компонентами
+Router
+Работа с сокетами
+</details>
