@@ -1,3 +1,7 @@
+* [link to code](https://github.com/Dimitry-prog/test-def)
+* [link to demo](https://test-k1138pp8c-dmitrys-projects-6d1664f1.vercel.app)
+* [link to tg mini app](https://t.me/testDefTest_bot/testDef)
+
 ## Getting Started
 
 ```bash
